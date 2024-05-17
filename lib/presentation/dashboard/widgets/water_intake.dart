@@ -89,7 +89,7 @@ class WaterIntakeWidget extends StatelessWidget {
               const SizedBox(height: 10),
               SizedBox(
                 height: 230,
-                width: 150,
+                width: 120,
                 child: ListView.builder(
                   itemCount: 4,
                   physics: const NeverScrollableScrollPhysics(),

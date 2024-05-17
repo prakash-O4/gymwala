@@ -52,8 +52,8 @@ class CaloriesWidget extends StatelessWidget {
               Transform.rotate(
                 angle: -35,
                 child: const SizedBox(
-                  height: 86,
-                  width: 86,
+                  height: 70,
+                  width: 70,
                   child: CircularProgressIndicator(
                     value: 0.6,
                     color: Color(0xFF92A3FD),
@@ -68,8 +68,8 @@ class CaloriesWidget extends StatelessWidget {
                 left: 9,
                 child: Center(
                   child: Container(
-                    height: 68,
-                    width: 68,
+                    height: 50,
+                    width: 50,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       boxShadow: [
@@ -90,7 +90,7 @@ class CaloriesWidget extends StatelessWidget {
                       child: popinsText(
                         text: '230 Kcal left',
                         style: const TextStyle(
-                          fontSize: 12,
+                          fontSize: 8,
                           color: Colors.white,
                         ),
                         align: TextAlign.center,

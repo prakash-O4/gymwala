@@ -11,7 +11,7 @@ class SleepWidget extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: Colors.white,
-      borderRadius: const BorderRadius.all(Radius.circular(20)),
+        borderRadius: const BorderRadius.all(Radius.circular(20)),
         boxShadow: [
           BoxShadow(
             color: const Color(0xFF1D242A).withOpacity(0.05),
@@ -21,7 +21,7 @@ class SleepWidget extends StatelessWidget {
           ),
         ],
       ),
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.all(10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -44,8 +44,8 @@ class SleepWidget extends StatelessWidget {
           ),
           SvgPicture.asset(
             SvgPath.sleepPath,
-            height: 70,
-            width: 80,
+            height: 60,
+            width: MediaQuery.sizeOf(context).width,
           ),
         ],
       ),

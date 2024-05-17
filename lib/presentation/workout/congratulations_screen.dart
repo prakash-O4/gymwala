@@ -11,28 +11,31 @@ class CongratulationScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(30),
-          child: Column(
-            children: [
-              SvgPicture.asset(SvgPath.congratulations),
-              const SizedBox(height: 20),
-              popinsText(
-                text: "Congratulations, You Have Finished Your Workout",
-                style: const TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.w700,
-                    color: Color(0xFF1D1617)),
-                align: TextAlign.center,
-              ),
-              const SizedBox(height: 30),
-              popinsText(
-                text:
-                    "Exercises is king and nutrition is queen. Combine the two and you will have a kingdom\n\n -Jack Lalane",
-                style: const TextStyle(fontSize: 14, color: Color(0xFF7B6F72)),
-                align: TextAlign.center,
-              ),
-            ],
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(30),
+            child: Column(
+              children: [
+                SvgPicture.asset(SvgPath.congratulations),
+                const SizedBox(height: 20),
+                popinsText(
+                  text: "Congratulations, You Have Finished Your Workout",
+                  style: const TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.w700,
+                      color: Color(0xFF1D1617)),
+                  align: TextAlign.center,
+                ),
+                const SizedBox(height: 30),
+                popinsText(
+                  text:
+                      "Exercises is king and nutrition is queen. Combine the two and you will have a kingdom\n\n -Jack Lalane",
+                  style:
+                      const TextStyle(fontSize: 14, color: Color(0xFF7B6F72)),
+                  align: TextAlign.center,
+                ),
+              ],
+            ),
           ),
         ),
       ),
